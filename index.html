@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container py-5">
+    <div class="row">
+    <!-- Calculator start here -->
+        <div class="col-md-12 col-lg-6">
+            <div class="calc_set">
+                <div class="for_monitor">
+                    <div class="for_top_monitop">
+                        0
+                    </div>
+                    <div class="for_main_monitop">
+                        
+                    </div>
+                </div>
+                <div class="for_buttons">
+                    <button class="p-2" style="width: 50%;" onclick="all_clear()">Ac</button>
+                    <button class="p-2" style="width: 50%;" onclick="back()">C</button>
+                    <button onclick="valGet(7)">7</button>
+                    <button onclick="valGet(8)">8</button>
+                    <button onclick="valGet(9)">9</button>
+                    <button onclick="valGet('/')">/</button>
+                    <button onclick="valGet(4)">4</button>
+                    <button onclick="valGet(5)">5</button>
+                    <button onclick="valGet(6)">6</button>
+                    <button onclick="valGet('*')">*</button>
+                    <button onclick="valGet(1)">1</button>
+                    <button onclick="valGet(2)">2</button>
+                    <button onclick="valGet(3)">3</button>
+                    <button onclick="valGet('+')">+</button>
+                    <button onclick="valGet(0)">0</button>
+                    <button onclick="valGet('.')">.</button>
+                    <button onclick="finalRes()">=</button>
+                    <button onclick="valGet('-')">-</button>
+                </div> 
+            </div>
+        </div>
+    <!-- Calculator end here -->
+
+    <!-- Analog clock start here -->
+        <div class="col-md-12 col-lg-6">
+
+            <div class="clock_set shadow">
+                <div class="hour"></div>
+                <div class="minute"></div>
+                <div class="second"></div>
+            </div> 
+        </div>
+    <!-- Analog clock end here -->
+    </div>
+</div>
+
+ 
+    <!--  Instant data with checkbox start here -->
+
+<div class="container my-5">
+    <div class="card shadow">
+        <div class="card-body">
+            <input type="checkbox" class="skill" id="PHP" value="PHP"> <label for="PHP">PHP</label> <br>
+
+            <input type="checkbox" class="skill" id="Python" value="Python"> <label for="Python">Python</label> <br>
+
+            <input type="checkbox" class="skill" id="Laravel" value="Laravel"> <label for="Laravel">Laravel</label> <br>
+
+            <input type="checkbox" class="skill" id="WordPress" value="WordPress"> <label for="WordPress">WordPress</label> <br>
+
+            <input type="checkbox" class="skill" id="IOS" value="IOS"> <label for="IOS">IOS</label> <br>
+
+            <input type="checkbox" class="skill" id="Java" value="Java"> <label for="Java">Java</label> <br>
+
+            <input type="checkbox" class="skill" id="Golan" value="Golan"> <label for="Golan">Golan</label> <br>
+
+            <input type="checkbox" class="skill" id="Blockchain" value="Blockchain"> <label for="Blockchain">Blockchain</label> <br>
+
+            <input type="checkbox" class="skill" id="Android" value="Android"> <label for="Android">Android</label> <br>
+            
+            <hr>
+            <ul class="list-group skill_all">
+                
+            </ul>     
+        </div>
+    </div>
+</div>
+    <!--  Instant data with checkbox end here -->
+
+
+
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./functions.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
